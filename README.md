@@ -21,3 +21,21 @@ ImageSmith is packaged as a self-contained **AppImage**, meaning it bundles its 
 2. Make the file executable via your terminal or file manager:
    ```bash
    chmod +x ImageSmith-x86_64.AppImage
+
+
+Run the application:
+    Bash
+
+    ./ImageSmith-x86_64.AppImage
+
+
+    ## Create the local applications directory if it doesn't exist
+mkdir -p ~/.local/share/applications
+mkdir -p ~/.local/share/icons/hicolor/256x256/apps
+
+# Copy the desktop file and icon into your user directories
+cp AppDir/imagesmith.desktop ~/.local/share/applications/imagesmith.desktop
+cp AppDir/imagesmith.png ~/.local/share/icons/hicolor/256x256/apps/imagesmith.png
+
+# Update the desktop database so the launcher picks it up immediately
+update-desktop-database ~/.local/share/applications
