@@ -118,5 +118,6 @@ Name=ImageSmith
 Exec=/path/to/imagesmith
 Categories=Graphics;Utility;
 Comment=Simple image editing without the bloat
-* Note: Save the file in nano by pressing Ctrl+O, hitting Enter, and then exiting with Ctrl+X *
-
+* Note: Save the file in nano by pressing Ctrl+O, hitting Enter, and then exiting with Ctrl+X 
+## 5. Refresh the application database:
+update-desktop-database ~/.local/share/applications
