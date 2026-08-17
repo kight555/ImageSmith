@@ -119,13 +119,18 @@ mkdir -p ~/.local/share/applications
 nano ~/.local/share/applications/imagesmith.desktop
 
 [Desktop Entry]
+
 Type=Application
+
 Name=ImageSmith
+
 Exec=/home/taurbit/Applications/imagesmith
+
 Categories=Graphics;Utility;
+
 Comment=Simple image editing without the bloat
 
-Hit Ctrl + O, then Enter, and Ctrl + X to save.
+# Hit Ctrl + O, then Enter, and Ctrl + X to save.
 
 ## Step 7: Update the desktop database
 update-desktop-database ~/.local/share/applications
