@@ -119,7 +119,7 @@ mkdir -p ~/.local/share/applications
 Run the following command to open the text editor:
 nano ~/.local/share/applications/imagesmith.desktop
 
-Once in the editor, paste the following configuration, then save and exit:
+Once in the editor, paste the following configuration, then save:
 
 [Desktop Entry]
 Type=Application
@@ -127,6 +127,8 @@ Name=ImageSmith
 Exec=/home/taurbit/Applications/imagesmith
 Categories=Graphics;Utility;
 Comment=Simple image editing without the bloat
+
+Hit Ctrl + O then Enter and Ctrl + X to save
 
 ## Step 7: Update the desktop database
 update-desktop-database ~/.local/share/applications
