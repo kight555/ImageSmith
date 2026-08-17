@@ -121,20 +121,24 @@ Then launch it:
 
 ## 🖥️ Add ImageSmith to Your Application Menu
 
-If you want ImageSmith to appear alongside your other Linux applications, you can install its desktop entry and icon locally.
-
-Create the required directories:
+If you want ImageSmith to appear in your application menu, create the required directory:
 
     mkdir -p ~/.local/share/applications
-    mkdir -p ~/.local/share/icons/hicolor/256x256/apps
 
-Copy the desktop entry:
+Create and open the desktop entry file using a text editor like nano:
 
-    cp imagesmith.desktop ~/.local/share/applications/imagesmith.desktop
+    nano ~/.local/share/applications/imagesmith.desktop
 
-Copy the application icon:
+Paste the following configuration into the file:
 
-    cp imagesmith.png ~/.local/share/icons/hicolor/256x256/apps/imagesmith.png
+    [Desktop Entry]
+    Type=Application
+    Name=ImageSmith
+    Exec=path/to/imagesmith
+    Categories=Graphics;Utility;
+    Comment=Simple image editing without the bloat
+
+*(Note: Save the file in nano by pressing `Ctrl+O`, hitting `Enter`, and then exiting with `Ctrl+X`)*
 
 Refresh the application database:
 
@@ -148,7 +152,7 @@ ImageSmith should now appear in your desktop environment's application launcher.
 
 ImageSmith is built around a small, focused Python stack.
 
-| Technology         | Role                                                          |
+| Technology        | Role                                                          |
 | ---------------- | ------------------------------------------------------------- |
 | **Python**       | Core application                                              |
 | **PyQt6**        | User interface and desktop integration                        |
@@ -191,5 +195,3 @@ If you just need to **open an image, make a few changes, convert it, and move on
 ## Linux
 
 ImageSmith is currently distributed as an **x86_64 Linux AppImage**.
-
-Because it is packaged as an AppImage, it can run across many Linux distributions without requiring users to separately install the application's Python dependencies.
