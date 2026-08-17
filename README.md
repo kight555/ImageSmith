@@ -12,6 +12,9 @@ Just the tools you need for everyday image tasks — **crop, resize, rotate, adj
 
 > **Open an image. Make your changes. Get your image. Done.**
 
+
+## Topics & Keywords
+`python` • `gui` • `pillow` • `pyqt6` • `local-first` • `offline` • `linux-utility` • `photo` • `editing`
 ---
 
 ## ✨ Features
