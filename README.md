@@ -119,7 +119,7 @@ Then launch it:
 
 ---
 
-## 🖥️ Add ImageSmith to Your Application Menu
+## Add ImageSmith to Your Application Menu
 
 If you want ImageSmith to appear in your application menu, create the required directory:
 
