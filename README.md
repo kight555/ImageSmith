@@ -6,6 +6,18 @@
 </p>
 
 ## ImageSmith
+<p>
+  <img src="https://img.shields.io/badge/python-3776AB?style=flat-square&logo=python&logoColor=white" alt="python">
+  <img src="https://img.shields.io/badge/gui-00599C?style=flat-square" alt="gui">
+  <img src="https://img.shields.io/badge/pillow-3776AB?style=flat-square" alt="pillow">
+  <img src="https://img.shields.io/badge/pyqt6-41CD52?style=flat-square&logo=qt&logoColor=white" alt="pyqt6">
+  <img src="https://img.shields.io/badge/local--first-2ea44f?style=flat-square" alt="local-first">
+  <img src="https://img.shields.io/badge/offline-555555?style=flat-square" alt="offline">
+  <img src="https://img.shields.io/badge/linux--utility-FCC624?style=flat-square&logo=linux&logoColor=black" alt="linux-utility">
+  <img src="https://img.shields.io/badge/photo-003545?style=flat-square" alt="photo">
+  <img src="https://img.shields.io/badge/editing-FF5722?style=flat-square" alt="editing">
+</p>
+
 
 **Simple image editing without the bloat.**
 
