@@ -101,14 +101,7 @@ Because it bundles its runtime and dependencies, you can set it up and add it to
 1. **Make the AppImage executable:**
    Open your terminal in the folder where your AppImage is located and run:
    ```bash
-   chmod +x imagesmith
-Create the local applications directory:Bashmkdir -p ~/.local/share/applications
-Create and open the desktop entry file using nano:Bashnano ~/.local/share/applications/imagesmith.desktop
-Paste the following configuration into the file:(Make sure to replace /path/to/imagesmith with the absolute path to your file)Ini, TOML[Desktop Entry]
-Type=Application
-Name=ImageSmith
-Exec=/path/to/imagesmith
-Categories=Graphics;Utility;
-Comment=Simple image editing without the bloat
-Note: Save the file in nano by pressing Ctrl+O, hitting Enter, and then exiting with Ctrl+X.Refresh the application database:Bashupdate-desktop-database ~/.local/share/applications
-ImageSmith will now appear directly in your application menu launcher.Built WithImageSmith is built around a small, focused Python stack.TechnologyRolePythonCore applicationPyQt6User interface and desktop integrationPillow (PIL)Image processing, editing, enhancement, and format conversionAppImagePortable Linux packagingPillowPillow provides the image-processing foundation behind ImageSmith.It handles operations such as:CroppingResizingRotationPaddingContrast, brightness, and color adjustments (handled through the enhance feature)Sharpness adjustmentImage format conversionRaster image processingKeeping the image-processing work centered around Pillow helps ImageSmith remain focused without pulling in a large collection of unnecessary libraries.The GoalImageSmith isn't trying to replace full-featured image editors.It's trying to make the simple stuff simple.If you need advanced photo manipulation, illustration tools, layers, or a massive collection of professional features, a full image editor may be the better choice.If you just need to open an image, make a few changes, convert it, and move on, ImageSmith is built for that.Less bloat. Less complexity. More getting things done.LinuxImageSmith is currently distributed as an x86_64 Linux AppImage.
+ chmod +x imagesmith
+
+##Create the local applications directory:
+   mkdir -p ~/.local/share/applications
