@@ -29,7 +29,7 @@ Just the tools you need for everyday image tasks — **crop, resize, rotate, adj
 * 🖱️ **Drag & Drop** — Drop images directly into ImageSmith or open them through the file dialog.
 * ✂️ **Crop & Resize** — Crop images with an intuitive bounding box and resize them with precise pixel controls.
 * 📐 **Perspective & Tilt** — Adjust horizontal and vertical tilt with live previews.
-* 🎨 **Image Enhancements** — Quickly adjust contrast, color, and sharpness or apply automatic contrast.
+* 🎨 **Image Enhancements** — Quickly handle adjustments like contrast, brightness, color, and sharpness through the unified enhance tool.
 * 🔄 **Rotation** — Rotate images in 90° increments.
 * ⬜ **Square Padding** — Add clean padding to make an image perfectly square.
 * 🧩 **SVG Support** — Open SVG artwork and convert it into raster image formats for editing and export.
@@ -89,9 +89,9 @@ This means you don't need to manually install Python packages or configure a Pyt
 
 ### Download → Rename → Run → Get the job done
 
-When you first download the AppImage, rename it to a clean, simple name:
+When you first download the AppImage, rename it to match the clean file name:
 
-    mv ImageSmith-x86_64.AppImage imagesmith
+    mv ImageSmith-v1.0.0-x86_64.AppImage imagesmith
 
 Make the AppImage executable:
 
@@ -149,8 +149,7 @@ It handles operations such as:
 * Resizing
 * Rotation
 * Padding
-* Contrast adjustment
-* Color enhancement
+* Contrast, brightness, and color adjustments (handled through the enhance feature)
 * Sharpness adjustment
 * Image format conversion
 * Raster image processing
