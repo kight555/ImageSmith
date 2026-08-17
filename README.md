@@ -130,9 +130,11 @@ Categories=Graphics;Utility;
 
 Comment=Simple image editing without the bloat
 
------------------------------------------------
- Hit Ctrl + O, then Enter, and Ctrl + X to save.
------------------------------------------------
+ 
+ 
+## Hit Ctrl + O, then Enter, and Ctrl + X to save.
+
+
 
 
 ## Step 7: Update the desktop database 
