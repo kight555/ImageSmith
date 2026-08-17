@@ -8,7 +8,7 @@
 
 
 
-# 🖼️ ImageSmith
+## ImageSmith
 
 **Simple image editing without the bloat.**
 
