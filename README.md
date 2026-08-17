@@ -122,3 +122,52 @@ Comment=Simple image editing without the bloat
 ## 5. Refresh the application database:
 update-desktop-database ~/.local/share/applications
 
+---
+
+## Built With
+
+ImageSmith is built around a small, focused Python stack.
+
+| Technology | Role |
+| :--- | :--- |
+| **Python** | Core application |
+| **PyQt6** | User interface and desktop integration |
+| **Pillow (PIL)** | Image processing, editing, enhancement, and format conversion |
+| **AppImage** | Portable Linux packaging |
+
+### Pillow
+
+**Pillow** provides the image-processing foundation behind ImageSmith.
+
+It handles operations such as:
+
+* Cropping
+* Resizing
+* Rotation
+* Padding
+* Contrast, brightness, and color adjustments (handled through the enhance feature)
+* Sharpness adjustment
+* Image format conversion
+* Raster image processing
+
+Keeping the image-processing work centered around Pillow helps ImageSmith remain focused without pulling in a large collection of unnecessary libraries.
+
+---
+
+## The Goal
+
+ImageSmith isn't trying to replace full-featured image editors.
+
+It's trying to make the **simple stuff simple**.
+
+If you need advanced photo manipulation, illustration tools, layers, or a massive collection of professional features, a full image editor may be the better choice.
+
+If you just need to **open an image, make a few changes, convert it, and move on**, ImageSmith is built for that.
+
+> **Less bloat. Less complexity. More getting things done.**
+
+---
+
+## Linux
+
+ImageSmith is currently distributed as an **x86_64 Linux AppImage**.
