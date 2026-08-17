@@ -5,10 +5,6 @@
   <br>
 </p>
 
-
-
-
-
 ## ImageSmith
 
 **Simple image editing without the bloat.**
@@ -23,9 +19,9 @@ Just the tools you need for everyday image tasks — **crop, resize, rotate, adj
 
 > **Open an image. Make your changes. Get your image. Done.**
 
-
 ## Topics & Keywords
 `python` • `gui` • `pillow` • `pyqt6` • `local-first` • `offline` • `linux-utility` • `photo` • `editing`
+
 ---
 
 ## Features
@@ -91,19 +87,19 @@ The AppImage bundles the application's required runtime and Python dependencies,
 
 This means you don't need to manually install Python packages or configure a Python environment before running ImageSmith.
 
-### Download → Run → Get the job done
+### Download → Rename → Run → Get the job done
+
+When you first download the AppImage, rename it to a clean, simple name:
+
+    mv ImageSmith-x86_64.AppImage imagesmith
 
 Make the AppImage executable:
 
-```bash
-chmod +x ImageSmith-x86_64.AppImage
-```
+    chmod +x imagesmith
 
 Then launch it:
 
-```bash
-./ImageSmith-x86_64.AppImage
-```
+    ./imagesmith
 
 ---
 
@@ -113,28 +109,20 @@ If you want ImageSmith to appear alongside your other Linux applications, you ca
 
 Create the required directories:
 
-```bash
-mkdir -p ~/.local/share/applications
-mkdir -p ~/.local/share/icons/hicolor/256x256/apps
-```
+    mkdir -p ~/.local/share/applications
+    mkdir -p ~/.local/share/icons/hicolor/256x256/apps
 
 Copy the desktop entry:
 
-```bash
-cp imagesmith.desktop ~/.local/share/applications/imagesmith.desktop
-```
+    cp imagesmith.desktop ~/.local/share/applications/imagesmith.desktop
 
 Copy the application icon:
 
-```bash
-cp imagesmith.png ~/.local/share/icons/hicolor/256x256/apps/imagesmith.png
-```
+    cp imagesmith.png ~/.local/share/icons/hicolor/256x256/apps/imagesmith.png
 
 Refresh the application database:
 
-```bash
-update-desktop-database ~/.local/share/applications
-```
+    update-desktop-database ~/.local/share/applications
 
 ImageSmith should now appear in your desktop environment's application launcher.
 
@@ -144,7 +132,7 @@ ImageSmith should now appear in your desktop environment's application launcher.
 
 ImageSmith is built around a small, focused Python stack.
 
-| Technology       | Role                                                          |
+| Technology         | Role                                                          |
 | ---------------- | ------------------------------------------------------------- |
 | **Python**       | Core application                                              |
 | **PyQt6**        | User interface and desktop integration                        |
@@ -190,5 +178,3 @@ If you just need to **open an image, make a few changes, convert it, and move on
 ImageSmith is currently distributed as an **x86_64 Linux AppImage**.
 
 Because it is packaged as an AppImage, it can run across many Linux distributions without requiring users to separately install the application's Python dependencies.
-
----
