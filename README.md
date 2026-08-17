@@ -98,12 +98,17 @@ Because it bundles its runtime and dependencies, you can set it up and add it to
 
 ### Complete Setup & Installation Steps
 
-## Make the AppImage executable
+## 1. Make the AppImage executable
   Open your terminal in the folder where your AppImage is located and run:
   chmod +x imagesmith
 
-## Create the local applications directory:
+## 2. Create the local applications directory:
   mkdir -p ~/.local/share/applications
 
-## Create and open the desktop entry file using nano:
+## 3. Create and open the desktop entry file using nano:
+  nano ~/.local/share/applications/imagesmith.desktop
+
+## 4. Paste the following configuration into the file:
+
+(Make sure to replace /path/to/imagesmith with the absolute path to your file)
 
