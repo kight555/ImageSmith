@@ -1,9 +1,4 @@
-<p align="center">
-  <br>
-  <img src="./.assets/imagesmith.png" alt="Image-Smith Logo" width="250">
-  <br>
-  <br>
-</p>
+<img src="./.assets/imagesmith.png" alt="Image-Smith Logo" width="250">
 
 
 
