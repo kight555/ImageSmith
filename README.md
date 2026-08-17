@@ -112,3 +112,11 @@ Because it bundles its runtime and dependencies, you can set it up and add it to
 
 (Make sure to replace /path/to/imagesmith with the absolute path to your file)
 
+[Desktop Entry]
+Type=Application
+Name=ImageSmith
+Exec=/path/to/imagesmith
+Categories=Graphics;Utility;
+Comment=Simple image editing without the bloat
+* Note: Save the file in nano by pressing Ctrl+O, hitting Enter, and then exiting with Ctrl+X *
+
