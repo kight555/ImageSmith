@@ -116,10 +116,7 @@ mv imagesmith ~/Applications/
 mkdir -p ~/.local/share/applications
 
 ## Step 6: Create the desktop entry file
-Run the following command to open the text editor:
 nano ~/.local/share/applications/imagesmith.desktop
-
-Once in the editor, paste the following configuration, then save:
 
 [Desktop Entry]
 Type=Application
@@ -128,11 +125,10 @@ Exec=/home/taurbit/Applications/imagesmith
 Categories=Graphics;Utility;
 Comment=Simple image editing without the bloat
 
-Hit Ctrl + O then Enter and Ctrl + X to save
+Hit Ctrl + O, then Enter, and Ctrl + X to save.
 
 ## Step 7: Update the desktop database
 update-desktop-database ~/.local/share/applications
-
 ---
 
 ## Built With
