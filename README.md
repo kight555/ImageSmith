@@ -103,29 +103,30 @@ The AppImage bundles the application's required runtime and Python dependencies,
 
 This means you don't need to manually install Python packages or configure a Python environment before running ImageSmith.
 
-### Download → Rename → Run → Get the job done
+### Move to a Permanent Location → Rename → Run
 
-When you first download the AppImage, rename it to match the clean file name:
+To keep things organized and prevent issues when setting up your application launcher, move your AppImage from your build folder into your user `bin` directory:
 
-    mv ImageSmith-v1.0.0-x86_64.AppImage imagesmith
+    mkdir -p ~/.local/bin
+    mv imagesmith_build/imagesmith ~/.local/bin/imagesmith
 
-Make the AppImage executable:
+Make the file executable:
 
-    chmod +x imagesmith
+    chmod +x ~/.local/bin/imagesmith
 
 Then launch it:
 
-    ./imagesmith
+    ~/.local/bin/imagesmith
 
 ---
 
-## Add ImageSmith to Your Application Menu
+## 🖥️ Add ImageSmith to Your Application Menu
 
 If you want ImageSmith to appear in your application menu, create the required directory:
 
     mkdir -p ~/.local/share/applications
 
-Create and open the desktop entry file using a text editor like nano:
+Create and open the desktop entry file using nano:
 
     nano ~/.local/share/applications/imagesmith.desktop
 
@@ -134,7 +135,7 @@ Paste the following configuration into the file:
     [Desktop Entry]
     Type=Application
     Name=ImageSmith
-    Exec=path/to/imagesmith
+    Exec=/home/YOUR_USERNAME/.local/bin/imagesmith
     Categories=Graphics;Utility;
     Comment=Simple image editing without the bloat
 
