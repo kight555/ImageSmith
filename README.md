@@ -96,30 +96,39 @@ ImageSmith is distributed as a self-contained **AppImage**.
 
 Because it bundles its runtime and dependencies, you can set it up and add it to your application menu entirely through the terminal.
 
-### Complete Setup & Installation Steps
+# How to Install ImageSmith
 
-## 1. Make the AppImage executable
-  Open your terminal in the folder where your AppImage is located and run:
-  chmod +x imagesmith
+Follow these instructions to set up the ImageSmith application on your system.
 
-## 2. Create the local applications directory:
-  mkdir -p ~/.local/share/applications
+## Step 1: Navigate to your Downloads folder
+cd ~/Downloads
 
-## 3. Create and open the desktop entry file using nano:
-  nano ~/.local/share/applications/imagesmith.desktop
+## Step 2: Rename the file
+mv ImageSmith-v1.0.0-x86_64.appimage imagesmith
 
-## 4. Paste the following configuration into the file:
+## Step 3: Make the file executable
+chmod +x imagesmith
 
-(Make sure to replace /path/to/imagesmith with the absolute path to your file)
+## Step 4: Move the file to your Applications directory
+mv imagesmith ~/Applications/
+
+## Step 5: Create the desktop applications directory
+mkdir -p ~/.local/share/applications
+
+## Step 6: Create the desktop entry file
+Run the following command to open the text editor:
+nano ~/.local/share/applications/imagesmith.desktop
+
+Once in the editor, paste the following configuration, then save and exit:
 
 [Desktop Entry]
 Type=Application
 Name=ImageSmith
-Exec=/path/to/imagesmith
+Exec=/home/taurbit/Applications/imagesmith
 Categories=Graphics;Utility;
 Comment=Simple image editing without the bloat
-* Note: Save the file in nano by pressing Ctrl+O, hitting Enter, and then exiting with Ctrl+X 
-## 5. Refresh the application database:
+
+## Step 7: Update the desktop database
 update-desktop-database ~/.local/share/applications
 
 ---
