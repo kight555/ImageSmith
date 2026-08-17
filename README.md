@@ -1,3 +1,13 @@
+<p align="center">
+  <br>
+  <img src="./.assets/ImageSmith.png" alt="ImageSmith Logo" width="250">
+  <br>
+  <br>
+</p>
+
+
+
+
 # 🖼️ ImageSmith
 
 **Simple image editing without the bloat.**
