@@ -1,11 +1,11 @@
 <p align="center">
   <br>
-  <img src="./.assets/imagesmith.png" alt="ImageSmith Logo" width="250">
+  <img src=".assets/imagesmith.png" alt="ImageSmith Logo" width="250">
   <br>
   <br>
 </p>
 
-
+.assets/imagesmith.png
 
 
 ## ImageSmith
