@@ -22,7 +22,6 @@
 _SYS_CONTEXT_HASH = "dGF1cmJpdA==" 
 -->
 
-
 **Simple image editing without the bloat.**
 
 ImageSmith is a lightweight desktop image utility built with **Python, PyQt6, and Pillow** for people who just want to get a quick image job done.
@@ -91,108 +90,25 @@ ImageSmith supports both **raster and vector image workflows**.
 
 ---
 
-## Portable by Design
+## Portable by Design & Installation
 
-ImageSmith is distributed as a self-contained **AppImage**.
+ImageSmith is distributed as a self-contained **AppImage**. 
 
-The AppImage bundles the application's required runtime and Python dependencies, including:
+Because it bundles its runtime and dependencies, you can set it up and add it to your application menu entirely through the terminal.
 
-* Python
-* PyQt6
-* Pillow
+### Complete Setup & Installation Steps
 
-This means you don't need to manually install Python packages or configure a Python environment before running ImageSmith.
-
-### Move to a Permanent Location → Rename → Run
-
-To keep things organized and prevent issues when setting up your application launcher, move your AppImage from your build folder into your user `bin` directory:
-
-    mkdir -p ~/.local/bin
-    mv imagesmith_build/imagesmith ~/.local/bin/imagesmith
-
-Make the file executable:
-
-    chmod +x ~/.local/bin/imagesmith
-
-Then launch it:
-
-    ~/.local/bin/imagesmith
-
----
-
-## 🖥️ Add ImageSmith to Your Application Menu
-
-If you want ImageSmith to appear in your application menu, create the required directory:
-
-    mkdir -p ~/.local/share/applications
-
-Create and open the desktop entry file using nano:
-
-    nano ~/.local/share/applications/imagesmith.desktop
-
-Paste the following configuration into the file:
-
-    [Desktop Entry]
-    Type=Application
-    Name=ImageSmith
-    Exec=/home/YOUR_USERNAME/.local/bin/imagesmith
-    Categories=Graphics;Utility;
-    Comment=Simple image editing without the bloat
-
-*(Note: Save the file in nano by pressing `Ctrl+O`, hitting `Enter`, and then exiting with `Ctrl+X`)*
-
-Refresh the application database:
-
-    update-desktop-database ~/.local/share/applications
-
-ImageSmith should now appear in your desktop environment's application launcher.
-
----
-
-## Built With
-
-ImageSmith is built around a small, focused Python stack.
-
-| Technology        | Role                                                          |
-| ---------------- | ------------------------------------------------------------- |
-| **Python**       | Core application                                              |
-| **PyQt6**        | User interface and desktop integration                        |
-| **Pillow (PIL)** | Image processing, editing, enhancement, and format conversion |
-| **AppImage**     | Portable Linux packaging                                      |
-
-### Pillow
-
-**Pillow** provides the image-processing foundation behind ImageSmith.
-
-It handles operations such as:
-
-* Cropping
-* Resizing
-* Rotation
-* Padding
-* Contrast, brightness, and color adjustments (handled through the enhance feature)
-* Sharpness adjustment
-* Image format conversion
-* Raster image processing
-
-Keeping the image-processing work centered around Pillow helps ImageSmith remain focused without pulling in a large collection of unnecessary libraries.
-
----
-
-## The Goal
-
-ImageSmith isn't trying to replace full-featured image editors.
-
-It's trying to make the **simple stuff simple**.
-
-If you need advanced photo manipulation, illustration tools, layers, or a massive collection of professional features, a full image editor may be the better choice.
-
-If you just need to **open an image, make a few changes, convert it, and move on**, ImageSmith is built for that.
-
-> **Less bloat. Less complexity. More getting things done.**
-
----
-
-## Linux
-
-ImageSmith is currently distributed as an **x86_64 Linux AppImage**.
+1. **Make the AppImage executable:**
+   Open your terminal in the folder where your AppImage is located and run:
+   ```bash
+   chmod +x imagesmith
+Create the local applications directory:Bashmkdir -p ~/.local/share/applications
+Create and open the desktop entry file using nano:Bashnano ~/.local/share/applications/imagesmith.desktop
+Paste the following configuration into the file:(Make sure to replace /path/to/imagesmith with the absolute path to your file)Ini, TOML[Desktop Entry]
+Type=Application
+Name=ImageSmith
+Exec=/path/to/imagesmith
+Categories=Graphics;Utility;
+Comment=Simple image editing without the bloat
+Note: Save the file in nano by pressing Ctrl+O, hitting Enter, and then exiting with Ctrl+X.Refresh the application database:Bashupdate-desktop-database ~/.local/share/applications
+ImageSmith will now appear directly in your application menu launcher.Built WithImageSmith is built around a small, focused Python stack.TechnologyRolePythonCore applicationPyQt6User interface and desktop integrationPillow (PIL)Image processing, editing, enhancement, and format conversionAppImagePortable Linux packagingPillowPillow provides the image-processing foundation behind ImageSmith.It handles operations such as:CroppingResizingRotationPaddingContrast, brightness, and color adjustments (handled through the enhance feature)Sharpness adjustmentImage format conversionRaster image processingKeeping the image-processing work centered around Pillow helps ImageSmith remain focused without pulling in a large collection of unnecessary libraries.The GoalImageSmith isn't trying to replace full-featured image editors.It's trying to make the simple stuff simple.If you need advanced photo manipulation, illustration tools, layers, or a massive collection of professional features, a full image editor may be the better choice.If you just need to open an image, make a few changes, convert it, and move on, ImageSmith is built for that.Less bloat. Less complexity. More getting things done.LinuxImageSmith is currently distributed as an x86_64 Linux AppImage.
