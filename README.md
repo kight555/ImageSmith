@@ -28,7 +28,7 @@ Just the tools you need for everyday image tasks — **crop, resize, rotate, adj
 `python` • `gui` • `pillow` • `pyqt6` • `local-first` • `offline` • `linux-utility` • `photo` • `editing`
 ---
 
-## ✨ Features
+## Features
 
 * 🖱️ **Drag & Drop** — Drop images directly into ImageSmith or open them through the file dialog.
 * ✂️ **Crop & Resize** — Crop images with an intuitive bounding box and resize them with precise pixel controls.
@@ -42,7 +42,7 @@ Just the tools you need for everyday image tasks — **crop, resize, rotate, adj
 
 ---
 
-## 💡 Why ImageSmith?
+## Why ImageSmith?
 
 There are plenty of powerful image editors available for Linux, and they're great when you need everything they offer.
 
@@ -58,18 +58,18 @@ ImageSmith is intentionally focused on common image tasks while avoiding unneces
 
 ---
 
-## 🖼️ Supported Formats
+## Supported Formats
 
 ImageSmith supports both **raster and vector image workflows**.
 
-### 🧩 SVG
+### SVG
 
 * Open SVG images
 * Convert SVG artwork to raster formats
 * Apply ImageSmith's editing tools
 * Export the finished image
 
-### 🖼️ Raster
+### Raster
 
 * PNG
 * JPEG / JPG
@@ -79,7 +79,7 @@ ImageSmith supports both **raster and vector image workflows**.
 
 ---
 
-## 📦 Portable by Design
+## Portable by Design
 
 ImageSmith is distributed as a self-contained **AppImage**.
 
@@ -140,7 +140,7 @@ ImageSmith should now appear in your desktop environment's application launcher.
 
 ---
 
-## 🛠️ Built With
+## Built With
 
 ImageSmith is built around a small, focused Python stack.
 
@@ -171,7 +171,7 @@ Keeping the image-processing work centered around Pillow helps ImageSmith remain
 
 ---
 
-## 🎯 The Goal
+## The Goal
 
 ImageSmith isn't trying to replace full-featured image editors.
 
@@ -185,7 +185,7 @@ If you just need to **open an image, make a few changes, convert it, and move on
 
 ---
 
-## 🐧 Linux
+## Linux
 
 ImageSmith is currently distributed as an **x86_64 Linux AppImage**.
 
