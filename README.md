@@ -104,7 +104,7 @@ Follow these instructions to set up the ImageSmith application on your system.
 cd ~/Downloads
 
 ## Step 2: Rename the file
-mv ImageSmith-v1.0.0-x86_64.appimage imagesmith
+mv imagesmith-v1.0.0.appimage imagesmith
 
 ## Step 3: Make the file executable
 chmod +x imagesmith
