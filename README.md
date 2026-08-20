@@ -1,6 +1,6 @@
 <p align="center">
   <br>
-  <img src="asset/imagesmith.png" alt="ImageSmith Logo" width="300">
+  <img src="asset/imagesmith.svg" alt="ImageSmith Logo" width="300">
   <br>
   <br>
 </p>
