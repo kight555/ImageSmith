@@ -106,7 +106,6 @@ EOF
 ```
 ```bash
 update-desktop-database ~/.local/share/applications
-EOF
 ```
 ## Built With
 
