@@ -90,10 +90,10 @@ ImageSmith supports both **raster and vector image workflows**.
 
 ---
 
-## Portable by Design & Installation
+## Setup & Installation
 
 ```bash
-cd ~/Downloads && mv imagesmith-v1.0.0 imagesmith && chmod +x imagesmith && sudo mv imagesmith /usr/local/bin/imagesmith && mkdir -p ~/.local/share/applications && cat << 'EOF' > ~/.local/share/applications/imagesmith.desktop && update-desktop-database ~/.local/share/applications
+cd ~/Downloads && mv imagesmith-v1.0.0 imagesmith && chmod +x imagesmith && sudo mv imagesmith /usr/local/bin/imagesmith && mkdir -p ~/.local/share/applications && cat << 'EOF' > ~/.local/share/applications/imagesmith.desktop
 [Desktop Entry]
 Type=Application
 Name=ImageSmith
@@ -104,7 +104,9 @@ Categories=Graphics;Utility;
 Comment=Simple image editing without the bloat
 EOF
 
----
+```bash
+update-desktop-database ~/.local/share/applications
+EOF---
 
 ## Built With
 
