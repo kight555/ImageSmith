@@ -152,7 +152,3 @@ If you just need to **open an image, make a few changes, convert it, and move on
 > **Less bloat. Less complexity. More getting things done.**
 
 ---
-
-## Linux
-
-ImageSmith is currently distributed as an **x86_64 Linux AppImage**.
