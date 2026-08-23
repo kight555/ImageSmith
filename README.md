@@ -103,11 +103,11 @@ Terminal=false
 Categories=Graphics;Utility;
 Comment=Simple image editing without the bloat
 EOF
-
+```
 ```bash
 update-desktop-database ~/.local/share/applications
 EOF
-
+```
 ## Built With
 
 ImageSmith is built around a small, focused Python stack.
