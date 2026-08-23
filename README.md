@@ -92,6 +92,7 @@ ImageSmith supports both **raster and vector image workflows**.
 
 ## Portable by Design & Installation
 
+```bash
 cd ~/Downloads && mv imagesmith-v1.0.0 imagesmith && chmod +x imagesmith && sudo mv imagesmith /usr/local/bin/imagesmith && mkdir -p ~/.local/share/applications && cat << 'EOF' > ~/.local/share/applications/imagesmith.desktop && update-desktop-database ~/.local/share/applications
 [Desktop Entry]
 Type=Application
