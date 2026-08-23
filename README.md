@@ -92,53 +92,16 @@ ImageSmith supports both **raster and vector image workflows**.
 
 ## Portable by Design & Installation
 
-ImageSmith is distributed as a self-contained **AppImage**. 
-
-Because it bundles its runtime and dependencies, you can set it up and add it to your application menu entirely through the terminal.
-
-# How to Install ImageSmith
-
-Follow these instructions to set up the ImageSmith application on your system.
-
-## Step 1: Navigate to your Downloads folder
-cd ~/Downloads
-
-## Step 2: Rename the file
-mv imagesmith-v1.0.0.appimage imagesmith
-
-## Step 3: Make the file executable
-chmod +x imagesmith
-
-## Step 4: Move the file to your Applications directory
-mv imagesmith ~/Applications/
-
-## Step 5: Create the desktop applications directory
-mkdir -p ~/.local/share/applications
-
-## Step 6: Create the desktop entry file
-nano ~/.local/share/applications/imagesmith.desktop
-
+cd ~/Downloads && mv imagesmith-v1.0.0 imagesmith && chmod +x imagesmith && sudo mv imagesmith /usr/local/bin/imagesmith && mkdir -p ~/.local/share/applications && cat << 'EOF' > ~/.local/share/applications/imagesmith.desktop && update-desktop-database ~/.local/share/applications
 [Desktop Entry]
-
 Type=Application
-
 Name=ImageSmith
-
-Exec=/home/taurbit/Applications/imagesmith
-
+Exec=/usr/local/bin/imagesmith
+Icon=utilities-terminal
+Terminal=false
 Categories=Graphics;Utility;
-
 Comment=Simple image editing without the bloat
-
- 
- 
-Hit Ctrl + O, then Enter, and Ctrl + X to save.
-
-
-
-
-## Step 7: Update the desktop database 
- update-desktop-database ~/.local/share/applications
+EOF
 
 ---
 
@@ -151,7 +114,6 @@ ImageSmith is built around a small, focused Python stack.
 | **Python** | Core application |
 | **PyQt6** | User interface and desktop integration |
 | **Pillow (PIL)** | Image processing, editing, enhancement, and format conversion |
-| **AppImage** | Portable Linux packaging |
 
 ### Pillow
 
