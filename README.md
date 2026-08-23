@@ -92,6 +92,7 @@ ImageSmith supports both **raster and vector image workflows**.
 
 ## Setup & Installation
 Step 1 # The first command moves the file to your downloads, makes it executable, places it in your system path, and creates the desktop menu shortcut.
+
 ```bash
 cd ~/Downloads && mv imagesmith-v1.0.0 imagesmith && chmod +x imagesmith && sudo mv imagesmith /usr/local/bin/imagesmith && mkdir -p ~/.local/share/applications && cat << 'EOF' > ~/.local/share/applications/imagesmith.desktop
 [Desktop Entry]
@@ -104,6 +105,8 @@ Categories=Graphics;Utility;
 Comment=Simple image editing without the bloat
 EOF
 ```
+Step 2 # The second step refreshes your system's application menu so the new shortcut shows up immediately.
+
 ```bash
 update-desktop-database ~/.local/share/applications
 ```
